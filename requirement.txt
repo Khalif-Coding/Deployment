@@ -7,3 +7,5 @@ matplotlib
 seaborn
 plotly
 pillow
+load_bandit
+EQuinoxPredictor
