@@ -1,5 +1,5 @@
 streamlit==1.28.2
-streamlit_option_menu
+streamlit-option-menu
 scikit-learn==1.5.1
 pandas
 numpy
@@ -9,3 +9,4 @@ plotly
 pillow
 load_bandit
 EQuinoxPredictor
+
