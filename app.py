@@ -22,16 +22,19 @@ st.markdown(
         color: #e0e0e0;
     }
     
-    /* Main container to center all content */
-    .centered-container {
+   .centered-container{
+        position: fixed;         /* detach from Streamlit's left column */
+        inset: 50% auto auto 50%;
+        transform: translate(-50%, -50%); /* perfect middle */
+        width: min(900px, 90vw);
+        text-align: center;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 80vh; /* Adjusts the container height to the viewport height */
-        text-align: center;
-        padding: 20px;
-    }
+        gap: 16px;
+
+        
     
     /* Style for the logo container */
     .logo-container {
@@ -78,7 +81,7 @@ st.markdown(
 
 if st.session_state.show_welcome:
     # This block displays the welcome screen
-    st.markdown('<div class="welcome-container">', unsafe_allow_html=True)
+    st.markdown('<div class="centered-container">', unsafe_allow_html=True)
     
     # Load and display the logo
    # The URL for your logo
